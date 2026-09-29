@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Don't Step on Thirteen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game" aria-label="Don't Step on Thirteen game board"></canvas>
+
+  <div class="corner">
+    <button id="pause-btn" class="icon-btn hidden" type="button" aria-label="Pause">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+    </button>
+    <button id="mute-btn" class="icon-btn" type="button" aria-label="Mute sound">
+      <svg class="on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 9l6 6M22 9l-6 6" fill="none" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div id="menu" class="overlay">
+    <div class="panel">
+      <h1>Don't Step on <span class="thirteen">Thirteen</span></h1>
+      <p>Fly your ship across the grid and grab the golden stars. Every few seconds the numbers slide along&nbsp;— if the row and column numbers of your tile add up to <b class="red">13</b>, the cannons fire!</p>
+      <p class="keys desktop-only">Arrows / WASD move · Space boost · Shift shield</p>
+      <p class="keys touch-only">Drag anywhere to fly · BOOST and SHIELD buttons</p>
+      <button id="play-btn" class="big-btn" type="button">Play</button>
+      <p class="small">Best: <span id="menu-best">0</span> stars</p>
+    </div>
+  </div>
+
+  <div id="over" class="overlay hidden">
+    <div class="panel">
+      <h2>Blasted!</h2>
+      <p id="record" class="record hidden">New record!</p>
+      <div class="stats">
+        <div><span id="final-score">0</span><small>stars</small></div>
+        <div><span id="final-level">1</span><small>level</small></div>
+        <div><span id="final-best">0</span><small>best</small></div>
+      </div>
+      <button id="again-btn" class="big-btn" type="button">Play again</button>
+      <p class="small desktop-only">or press Enter</p>
+    </div>
+  </div>
+
+  <div id="pause" class="overlay hidden">
+    <div class="panel">
+      <h2>Paused</h2>
+      <button id="resume-btn" class="big-btn" type="button">Resume</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

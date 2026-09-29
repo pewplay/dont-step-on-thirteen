@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
+  "title": "Don't Step on Thirteen",
+  "description": "Pilot a starship across a shifting number grid and grab stars, but never stop where row and column add up to 13. Free in your browser.",
+  "about": "Don't Step on Thirteen is a quick-thinking arcade puzzle set on a cosmic grid. Numbered cannons line the top and the left side of the board, and every tile is worth its row number plus its column number. Fly your little starship to the golden stars, but if the tile under you adds up to 13, the cannons fire and your ship is blasted.\n\nThe twist is that the numbers never sit still: every few seconds they slide along and a new number loads into the spare cannon, so safe tiles turn deadly without warning. Red cannons and flashing tiles show where the thirteens are, a short boost gets you out of trouble, and a shield lets you ride out one bad shift. Every five stars the level goes up, the grid changes colour and the numbers move faster.\n\nOriginally created by daivan and Håkan Einarsson for js13kGames 2024.",
+  "howToPlay": "Fly your ship onto the golden stars to collect them. Every tile's value is its row number plus its column number, and touching a tile that adds up to 13 gets you blasted. The numbers slide along every few seconds, so keep an eye on the red cannons and the spare cannon that shows the next number. Boost and shield both use your energy bar, which refills while you cruise.",
+  "controls": [
+    { "input": "Arrow keys / WASD", "action": "Fly the ship" },
+    { "input": "Space", "action": "Toggle boost" },
+    { "input": "Shift / C", "action": "Raise the shield" },
+    { "input": "Drag anywhere", "action": "Fly the ship on touch screens" },
+    { "input": "On-screen buttons", "action": "Boost and shield on touch screens" }
+  ],
+  "tips": [
+    "A red cannon means its row or column holds a thirteen, so follow the red lines to find the danger.",
+    "Watch the spare cannons: when their windows glow, the numbers are about to slide one step toward the corner.",
+    "Save a full energy bar for the shield when you are stuck between thirteens right before a shift.",
+    "Boost burns energy fast, so switch it off again once you have reached safety."
+  ],
+  "faq": [
+    { "question": "Is Don't Step on Thirteen free to play?", "answer": "Yes. It is completely free and runs in your browser, with no download or sign-up." },
+    { "question": "Can I play it on a phone or tablet?", "answer": "Yes. Drag anywhere to steer and use the on-screen Boost and Shield buttons; it works in both portrait and landscape." },
+    { "question": "How do I know which tiles are dangerous?", "answer": "Add the number on the tile's row cannon to the number on its column cannon. Red cannons and red flashing tiles mark the thirteens right after every shift." }
+  ],
+  "category": "Arcade",
+  "tags": ["numbers", "math", "space", "arcade", "reflex", "js13k"],
+  "author": "daivan & Håkan Einarsson",
+  "playMode": "SinglePlayer",
+  "orientation": "any",
+  "cover": "cover.png",
+  "screenshots": ["screenshots/1.png", "screenshots/2.png", "screenshots/3.png"],
+  "added": "2026-09-28",
+  "draft": false
+}
